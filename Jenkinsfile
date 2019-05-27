@@ -37,7 +37,7 @@ pipeline {
         }
 		stage("Package") {
 		    steps {
-		        sh "./dradlew build"
+		        sh "./gradlew build"
 		    }
 		}
 		stage("Docker build") {
